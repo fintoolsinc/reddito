@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <form class="row g-3 needs-validation" id="view.record" novalidate>
+        <div class="col-3">
+            <div class="form-outline">
+                <label for="view.record.rid" class="form-label">ID</label>
+                <input type="text" class="form-control form-control-sm" id="view.record.rid" required />
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please provide an ID</div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="form-outline">
+                <label for="view.record.tag" class="form-label">Tag</label>
+                <input type="string" class="form-control form-control-sm" id="view.record.tag" required />
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please provide a Tag</div>
+            </div>
+        </div>
+        <div class="col-2">
+            <label for="view.record.type" class="form-label">Type</label>
+            <select class="form-select form-select-sm" id="view.record.type" required>
+                <option value="text">Text</option><option value="number">Number</option>
+            </select>
+            <div class="valid-feedback">Looks good!</div>            
+            <div class="invalid-feedback">Please select a Type</div>
+        </div>
+        <div class="col-2">
+            <label for="view.record.readonly" class="form-label">ReadOnly</label>
+            <select class="form-select form-select-sm" id="view.record.readonly" required>
+                <option value="yes">Yes</option><option value="no">No</option>
+            </select>
+            <div class="valid-feedback">Looks good!</div>            
+            <div class="invalid-feedback">Please select if Readonly</div>
+        </div>
+        <div class="col-2">
+            <label for="view.record.disabled" class="form-label">Disabled</label>
+            <select class="form-select form-select-sm" id="view.record.disabled" required>
+                <option value="yes">Yes</option><option value="no">No</option>
+            </select>
+            <div class="valid-feedback">Looks good!</div>            
+            <div class="invalid-feedback">Please select if Disabled</div>
+        </div>        
+        <div class="col-12 d-flex justify-content-end">
+            <button class="btn btn-outline-primary" id="view.record.save">Save</button>
+        </div>
+        <input type="hidden" id="view.record.id">
+        <input type="hidden" id="view.record.count">
+    </form>
+</body>
+</html>

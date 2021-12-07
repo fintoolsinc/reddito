@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <form class="row g-3 needs-validation" id="producto" novalidate>
+        <div class="col-4">
+            <div class="form-outline">
+                <label for="producto.id" class="form-label">ID</label>
+                <input type="text" class="form-control" id="producto.id" readonly/>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="form-outline">
+                <label for="producto.date" class="form-label">Date</label>
+                <input type="date" class="form-control" id="producto.date" required />
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please choose a date</div>
+            </div>
+        </div>
+        <!--<div class="col-4">
+            <div class="form-outline">
+                <label for="producto.index" class="form-label">Index</label>
+                <input type="number" class="form-control" id="producto.index" required />
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please provide an Index</div>
+            </div>
+        </div>-->
+        <div class="col-4">
+            <div class="form-outline">
+                <label for="producto.prize" class="form-label">Prize</label>
+                <input type="text" class="form-control" id="producto.prize" required />
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please provid a valid prize</div>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="form-outline">
+                <label for="producto.desc" class="form-label">Description</label>
+                <input type="text" class="form-control" id="producto.desc" required />
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please provid Description</div>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="form-outline">
+                <label for="producto.imageDir" class="form-label">Direccion de Imagen</label>
+                <input type="text" class="form-control" id="producto.imageDir" required />
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please provid Description</div>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="form-outline">
+                <label for="producto.text" class="form-label">Comments</label>
+                <textarea class="form-control" id="producto.text"></textarea>
+            </div>
+        </div>
+        <div class="col-12 d-flex justify-content-end">
+            <button class="btn btn-outline-primary" id="producto.save">Save</button>
+        </div>
+    </form>
+</body>
+</html>

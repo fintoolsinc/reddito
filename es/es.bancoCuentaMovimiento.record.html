@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <form class="row g-3 needs-validation" id="bancoCuentaMovimiento" novalidate>
+        <div class="col-4">
+            <div class="form-outline">
+                <label for="bancoCuentaMovimiento.id" class="form-label">ID</label>
+                <input type="text" class="form-control" id="bancoCuentaMovimiento.id" readonly/>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="form-outline">
+                <label for="bancoCuentaMovimiento.date" class="form-label">Date</label>
+                <input type="date" class="form-control" id="bancoCuentaMovimiento.date" required />
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please choose a date</div>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="form-outline">
+                <label for="bancoCuentaMovimiento.desc" class="form-label">Description</label>
+                <input type="text" class="form-control" id="bancoCuentaMovimiento.desc" required />
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please provid Description</div>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="form-outline">
+                <label for="bancoCuentaMovimiento.text" class="form-label">Comments</label>
+                <textarea class="form-control" id="bancoCuentaMovimiento.text"></textarea>
+            </div>
+        </div>
+        <div class="col-12 d-flex justify-content-end">
+            <button class="btn btn-outline-primary" id="bancoCuentaMovimiento.save">Save</button>
+        </div>
+    </form>
+</body>
+</html>

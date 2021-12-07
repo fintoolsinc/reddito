@@ -1,0 +1,31 @@
+<data>
+    <title>MundoCeramico</title>
+    <portal>
+        <app>MundoCeramico</app>
+        <port>31010</port>
+        <lang>es</lang>
+        <html>home</html>
+    </portal>
+    <database>
+        <host>localhost</host>
+        <port>4406</port>
+        <name>MundoCeramico</name>
+        <driver>mysql</driver>
+        <user>root</user>
+        <pass>admin</pass>
+        <connectionLimit>10</connectionLimit>
+    </database>
+    <authentication>
+        <key>id</key>
+        <user>usuario</user>
+        <desk>usuario.desk</desk>
+        <role>usuario.role</role>
+        <property id="id"></property>
+        <property id="password"></property>
+        <property id="nombres"></property>
+        <property id="apellidos"></property>
+        <property id="role.id"></property>
+        <property id="desk.id"></property>
+        <property id="desk.lang"></property>
+    </authentication>
+</data>

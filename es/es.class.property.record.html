@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <form class="row g-3 needs-validation" id="class.property" novalidate>
+        <div class="col-4">
+            <div class="form-outline">
+                <label for="class.property.pid" class="form-label">ID</label>
+                <input type="text" class="form-control" id="class.property.pid" required />
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please provide an ID</div>
+            </div>
+        </div>        
+        <div class="col-4">
+            <label for="class.property.type" class="form-label">Type</label>
+            <select class="form-select" id="class.property.type" required>
+                <option value="string">String</option><option value="integer">Integer</option><option value="decimal">Decimal</option><option value="float">Float</option><option value="date">Date</option><option value="time">Time</option><option value="datetime">Datetime</option><option value="timestamp">Timestamp</option>
+            </select>
+            <div class="valid-feedback">Looks good!</div>            
+            <div class="invalid-feedback">Please select a Type</div>
+        </div>
+        <div class="col-4">
+            <div class="form-outline">
+                <label for="class.property.length" class="form-label">Length</label>
+                <input type="number" class="form-control" id="class.property.length" required />
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please provide a Length</div>
+            </div>
+        </div> 
+        <div class="col-12 d-flex justify-content-end">
+            <button class="btn btn-outline-primary" id="class.property.save">Save</button>
+        </div>
+        <input type="hidden" id="class.property.id">
+        <input type="hidden" id="class.property.count">
+    </form>
+</body>
+</html>

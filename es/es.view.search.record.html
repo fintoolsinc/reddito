@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <form class="row g-3 needs-validation" id="view.search" novalidate>
+        <div class="col-4">
+            <div class="form-outline">
+                <label for="view.search.sid" class="form-label">ID</label>
+                <input type="text" class="form-control" id="view.search.sid" required />
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please provide an ID</div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="form-outline">
+                <label for="view.search.index" class="form-label">Index</label>
+                <input type="number" class="form-control" id="view.search.index" required />
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please provide an Index</div>
+            </div>
+        </div>
+        <div class="col-4">
+            <label for="view.search.visible" class="form-label">Visible</label>
+            <select class="form-select" id="view.search.visible" required>
+                <option value="yes">Yes</option><option value="no">No</option>
+            </select>
+            <div class="valid-feedback">Looks good!</div>            
+            <div class="invalid-feedback">Please select if Visible</div>
+        </div>
+        <div class="col-8">
+            <div class="form-outline">
+                <label for="view.search.header" class="form-label">Header</label>
+                <input type="text" class="form-control" id="view.search.header" required />
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please provide a Header</div>
+            </div>
+        </div> 
+        <div class="col-4">
+            <div class="form-outline">
+                <label for="view.search.width" class="form-label">width</label>
+                <input type="number" class="form-control" id="view.search.width" required />
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please provide a Width</div>
+            </div>
+        </div> 
+        <div class="col-12 d-flex justify-content-end">
+            <button class="btn btn-outline-primary" id="view.search.save">Save</button>
+        </div>
+        <input type="hidden" id="view.search.id">
+        <input type="hidden" id="view.search.count">
+    </form>
+</body>
+</html>

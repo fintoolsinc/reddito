@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="WebSoft, SA de CV">
+    <link rel="icon" sizes="192x192" href="/res/img/Mundo-Ceramico-Icon.svg">
+    <link rel="manifest" href="/res/json/manifest.json">
+    <link href="/res/modules/bootstrap5/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/res/modules/bootstrap5/icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="/res/css/home.css" rel="stylesheet" id='app-style'>
+    <script src="/res/modules/bootstrap5/js/bootstrap.bundle.min.js"></script>
+    <script src="/res/modules/jquery3.5/jquery-3.5.1.min.js"></script>
+    <script src="/res/modules/datatables4/js/jquery.dataTables.min.js"></script>
+    <script src="/res/modules/datatables4/js/dataTables.bootstrap4.min.js"></script>
+    <script src="/res/modules/datatables4/js/dataTables.responsive.min.js"></script>
+    <script src="/res/modules/datatables4/js/responsive.bootstrap4.min.js"></script>
+    <script src="/res/bsb.js"></script>
+    <script src="/res/js/catalogo.js"></script>
+    <title>Mundo Ceramico</title>
+  </head>
+<body>
+  <header class="d-flex flex-column flex-md-row align-items-center p-0 px-md-4 mb-3 bg-white border-bottom shadow-sm">
+    <a class="my-0 p-0 me-md-auto" href="/"><img class="mb-0" src="/res/img/Mundo-Ceramico-Logo.svg" alt="" height="70"></a>
+    <nav class="my-2 my-md-0 me-md-3">
+      <a class="p-2 fw-bold" style="text-decoration: none;color: #15253F;" href="#">Baskets</a>
+      <a class="p-2 fw-bold" style="text-decoration: none;color: #15253F;" href="#">Tools</a>
+      <a class="p-2 fw-bold" style="text-decoration: none;color: #15253F;" href="#">Essentials</a>
+      <a class="p-2 fw-bold" style="text-decoration: none;color: #15253F;" href="#">Gifts</a>
+    </nav>
+    <a class="btn btn-outline-success fw-bold" style="color: #15253F;" href="#" id="btnSignIn">Sign In</a>
+  </header>
+  <main class="container">
+    <div class="pricing-header mx-auto text-center">
+      <h1 class="display-6 fw-bold" style="color: #15253F;">Ofertas de la Semana</h1>
+      <p class="lead fw-bold" style="color: #15253F;">desde $30.00</p>
+    </div>
+    <div class="row row-cols-1 row-cols-md-4" id="catalogo">
+      <script>
+       constructCatalog();
+
+       
+      </script>
+    </div>
+    <footer class="pt-4 my-md-5 pt-md-5 border-top">
+      <div class="row">
+        <div class="col-12 col-md">
+          <img class="mb-2" src="/res/img/Mundo-Ceramico-Icon.svg" alt="" width="60" height="60">
+          <small class="d-block mb-3 text-muted">&copy; 2017-2020</small>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Features</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="link-secondary" style="text-decoration: none;color: #15253F;" href="#">Cool stuff</a></li>
+            <li><a class="link-secondary" style="text-decoration: none;color: #15253F;" href="#">Random feature</a></li>
+            <li><a class="link-secondary" style="text-decoration: none;color: #15253F;" href="#">Team feature</a></li>
+            <li><a class="link-secondary" style="text-decoration: none;color: #15253F;" href="#">Stuff for developers</a></li>
+            <li><a class="link-secondary" style="text-decoration: none;color: #15253F;" href="#">Another one</a></li>
+            <li><a class="link-secondary" style="text-decoration: none;color: #15253F;" href="#">Last time</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Resources</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="link-secondary" style="text-decoration: none;color: #15253F;" href="#">Resource</a></li>
+            <li><a class="link-secondary" style="text-decoration: none;color: #15253F;" href="#">Resource name</a></li>
+            <li><a class="link-secondary" style="text-decoration: none;color: #15253F;" href="#">Another resource</a></li>
+            <li><a class="link-secondary" style="text-decoration: none;color: #15253F;" href="#">Final resource</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>About</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="link-secondary" style="text-decoration: none;color: #15253F;" href="#">Team</a></li>
+            <li><a class="link-secondary" style="text-decoration: none;color: #15253F;" href="#">Locations</a></li>
+            <li><a class="link-secondary" style="text-decoration: none;color: #15253F;" href="#">Privacy</a></li>
+            <li><a class="link-secondary" style="text-decoration: none;color: #15253F;" href="#">Terms</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </main>
+  <script src="/res/app.js"></script>
+  
+  
+
+
+
+</body>
+</html>

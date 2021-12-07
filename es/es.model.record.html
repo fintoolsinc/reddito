@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <form class="row g-3 needs-validation" id="model" novalidate>
+        <div class="col-6">
+            <div class="form-outline">
+                <label for="model.id" class="form-label">ID</label>
+                <input type="text" class="form-control form-control-sm" id="model.id" required/>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="form-outline">
+                <label for="model.date" class="form-label">Date</label>
+                <input type="date" class="form-control form-control-sm" id="model.date" required />
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please choose a date</div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="form-outline">
+                <label for="model.port" class="form-label">Port</label>
+                <input type="number" class="form-control form-control-sm" id="model.port" required />
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please provide a Port</div>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="form-outline">
+                <label for="model.desc" class="form-label">Description</label>
+                <input type="text" class="form-control form-control-sm" id="model.desc" required />
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please provid Description</div>
+            </div>
+        </div>
+        <div class="col-8">
+            <div class="form-outline">
+                <label for="model.path" class="form-label">Path</label>
+                <input type="text" class="form-control form-control-sm" id="model.path" required />
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please provid a Path</div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="form-outline">
+                <label for="model.home" class="form-label">Home</label>
+                <input type="text" class="form-control form-control-sm" id="model.home" required />
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please provid a Home</div>
+            </div>
+        </div>
+        <div class="col-3">
+            <label for="model.icon.id" class="form-label">Icon</label>
+            <select class="form-select form-select-sm" id="model.icon.id" required></select>
+            <div class="valid-feedback">Looks good!</div>            
+            <div class="invalid-feedback">Please select an Icon</div>
+        </div>
+        <div class="col-3">
+            <label for="model.logo.id" class="form-label">Logo</label>
+            <select class="form-select form-select-sm" id="model.logo.id" required></select>
+            <div class="valid-feedback">Looks good!</div>            
+            <div class="invalid-feedback">Please select a Logo</div>
+        </div>
+        <div class="col-3">
+            <div class="form-outline">
+                <label for="model.lang" class="form-label">Language</label>
+                <input type="text" class="form-control form-control-sm" id="model.lang" required />
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please provid a Language</div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="form-outline">
+                <label for="model.dbport" class="form-label">DB Port</label>
+                <input type="number" class="form-control form-control-sm" id="model.dbport" required />
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please provid a DB Port</div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="form-outline">
+                <label for="model.dbhost" class="form-label">DB Host</label>
+                <input type="text" class="form-control form-control-sm" id="model.dbhost" required />
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please provid a DB Host</div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="form-outline">
+                <label for="model.dbname" class="form-label">DB Name</label>
+                <input type="text" class="form-control form-control-sm" id="model.dbname" required />
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please provid a DB Name</div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="form-outline">
+                <label for="model.dbdriver" class="form-label">DB Driver</label>
+                <input type="text" class="form-control form-control-sm" id="model.dbdriver" required />
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please provid a DB Driver</div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="form-outline">
+                <label for="model.dbuser" class="form-label">DB User</label>
+                <input type="text" class="form-control form-control-sm" id="model.dbuser" required />
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please provid a DB User</div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="form-outline">
+                <label for="model.dbpassword" class="form-label">DB Password</label>
+                <input type="text" class="form-control form-control-sm" id="model.dbpassword" required />
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please provid a DB Password</div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="form-outline">
+                <label for="model.dbconnections" class="form-label">DB Connections</label>
+                <input type="number" class="form-control form-control-sm" id="model.dbconnections" required />
+                <div class="valid-feedback">Looks good!</div>
+                <div class="invalid-feedback">Please provid a DB Connections</div>
+            </div>
+        </div>        
+        <div class="col-12">
+            <div class="form-outline">
+                <label for="model.text" class="form-label">Comments</label>
+                <textarea class="form-control form-control-sm" id="model.text"></textarea>
+            </div>
+        </div>
+        <div class="col-8 d-flex justify-content-end">
+            <button class="btn btn-outline-danger" id="model.remove" disabled>Remove</button>
+        </div>
+        <div class="col-4 d-flex justify-content-end">
+            <button class="btn btn-outline-primary" id="model.save">Save</button>
+        </div>          
+    </form>
+</body>
+</html>

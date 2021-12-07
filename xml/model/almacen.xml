@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model>
+    <class name="almacen">
+        <property id="id">
+            <type>string</type>
+            <length>128</length>
+        </property>
+        <property id="desc">
+            <type>string</type>
+            <length>255</length>
+        </property>
+        <property id="date">
+            <type>date</type>
+            <length>14</length>
+        </property>
+        <property id="text">
+            <type>text</type>
+            <length>255</length>
+        </property>
+        <property id="in">
+            <type>timestamp</type>
+            <length>14</length>
+        </property>
+        <property id="update">
+            <type>timestamp</type>
+            <length>14</length>
+        </property>
+    </class>
+    <mapper>
+        <class name="almacen" collection="almacenes" type="table" key="id"/>
+    </mapper>
+</model>

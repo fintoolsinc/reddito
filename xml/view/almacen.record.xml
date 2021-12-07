@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<view>
+    <class>almacen</class>
+    <element id="id">
+        <attributes>
+            <tag>input</tag>
+            <type>string</type>
+            <readonly>no</readonly>
+            <disabled>no</disabled>
+            <columns>4</columns>
+        </attributes>
+    </element>
+    <element id="desc">
+        <attributes>
+            <tag>input</tag>
+            <type>string</type>
+            <readonly>no</readonly>
+            <disabled>no</disabled>
+            <columns>4</columns>
+        </attributes>
+    </element>
+    <element id="text">
+        <attributes>
+            <tag>textarea</tag>
+            <type>text</type>
+            <readonly>no</readonly>
+            <disabled>no</disabled>
+            <columns>4</columns>
+        </attributes>
+    </element>
+    <element id="date">
+        <attributes>
+            <tag>input</tag>
+            <type>date</type>
+            <readonly>no</readonly>
+            <disabled>no</disabled>
+            <columns>4</columns>
+        </attributes>
+    </element>
+</view>
